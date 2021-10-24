@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"allowJs": false,
+		"target": "ES2018",
+		"strict": true,
+		"module": "CommonJS",
+		"pretty": true,
+		"esModuleInterop": true,
+		"sourceMap": true,
+		"noImplicitAny": true,
+		"resolveJsonModule": true,
+		"noEmit": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true
+	},
+	"exclude": ["./node_modules/**"]
+}
