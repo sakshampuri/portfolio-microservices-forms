@@ -1,8 +1,8 @@
 {
-	"name": "sqs",
-	"version": "1.0.0",
-	"main": "index.js",
-	"license": "MIT",
+	"name": "portfolio-microservices-forms",
+	"version": "0.1.0",
+	"main": "./src/expressApp.ts",
+	"license": "UNLICENSED",
 	"scripts": {
 		"dev": "ts-node-transpile-only src/expressApp.ts",
 		"build": "cross-env NODE_ENV=production && esbuild ./src/index.js --bundle --platform=node --minify --outfile=./build/index.js --sourcemap",

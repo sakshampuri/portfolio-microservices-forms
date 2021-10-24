@@ -1,5 +1,8 @@
 import AdmZip from "adm-zip";
-import { version as projectVersion } from "../package.json";
+import {
+	name as projectName,
+	version as projectVersion,
+} from "../package.json";
 import { join as joinPath } from "path";
 
 const zipper = new AdmZip();
@@ -13,7 +16,7 @@ zipper.addLocalFile(joinPath(buildDir, "index.js.map"));
 
 export const functionPackagedZipLocation = joinPath(
 	buildDir,
-	`prodDeploy-${projectVersion}.zip`
+	`${projectName}-${projectVersion}.zip`
 );
 
 console.info(`Writing prod zip at ${functionPackagedZipLocation}`);
